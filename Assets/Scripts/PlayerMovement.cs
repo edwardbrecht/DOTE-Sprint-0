@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         right = Input.GetAxisRaw("Horizontal");
 
         transform.TransformDirection(Vector3.forward);
-        transform.Translate(right * speed * Time.deltaTime, 0, up * speed * Time.deltaTime);
+        transform.Translate(right * speed * Time.deltaTime, 0, up * speed * Time.deltaTime, Space.World);
 
 
     }
